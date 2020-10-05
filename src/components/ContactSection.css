@@ -1,0 +1,121 @@
+.contact-container {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact {
+  width: 70%;
+  margin: auto;
+}
+.contact-info {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+}
+.address-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.address-description {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 20px;
+  max-width: 200px;
+}
+.contact-form {
+  width: 70%;
+}
+.input,
+.msg .area {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  outline: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.login .input {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+.login .input:last-child {
+  margin-right: 0;
+}
+.msg .area {
+  height: 100px;
+  text-transform: uppercase;
+  min-height: 50px;
+}
+.sub-btn {
+  width: 170px;
+  text-align: center;
+  height: 45px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+.sub-btn:hover {
+  background-color: brown;
+  color: white;
+  transition: 0.1s linear;
+}
+.input:focus,
+.msg .area:focus {
+  border: 1px solid rgb(194, 0, 0);
+}
+.btn-description {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address-notice {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1400px) {
+  .contact-info {
+    flex-direction: column;
+  }
+  .address-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
+  }
+  .address-title,
+  .address-description {
+    text-align: center;
+    margin: auto;
+  }
+  .contact {
+    width: 90%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .address-section {
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+  }
+  .btn-description {
+    width: 90%;
+  }
+  .address-notice {
+    width: 80%;
+  }
+}

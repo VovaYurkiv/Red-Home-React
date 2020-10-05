@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  color: #555555;
+  line-height: 1.6;
+}
+.navbar-container {
+  background-color: #901d13;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navbar {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo {
+  font-size: 30px;
+  flex: 3;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 3;
+  align-items: center;
+}
+.navbar-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.2s linear;
+}
+.navbar-link:hover {
+  color: #901d13;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.navbar-link:focus {
+  color: #901d13;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  outline: none;
+}
+.section-line {
+  content: '';
+  display: inline-block;
+  width: 5%;
+  margin-bottom: 10px;
+  height: 2px;
+  background-color: #555555;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar-logo {
+    flex: 3;
+  }
+  .navbar-nav {
+    flex: 4;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar-logo {
+    flex: 1;
+  }
+  .navbar-nav {
+    flex: 2;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar-logo {
+    flex: 1;
+  }
+  .navbar-nav {
+    flex: 3;
+  }
+  .navbar {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar-logo {
+    flex: 1;
+  }
+  .navbar-nav {
+    flex: 3;
+  }
+  .navbar {
+    width: 90%;
+  }
+  .navbar-link {
+    font-size: 14px;
+  }
+  .navbar-logo {
+    font-size: 25px;
+  }
+}
