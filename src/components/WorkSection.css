@@ -53,10 +53,17 @@
 @media screen and (max-width: 1100px) {
   .works-images {
     grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
   .work-picture {
     width: 50%;
     height: 50%;
+  }
+  .works-container {
+    padding-top: 10px;
+  }
+  .works-nav {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 700px) {
@@ -66,10 +73,11 @@
   }
   .works-nav {
     padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    width: 430px;
+    width: 100%;
     margin: auto;
+  }
+  .work-nav {
+    font-size: 18px;
   }
   .works {
     width: 90%;

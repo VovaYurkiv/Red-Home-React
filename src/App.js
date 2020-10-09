@@ -10,7 +10,6 @@ import Navbar from './components/Navbar';
 import QuoteSection from './components/QuoteSection';
 import ServiceSection from './components/ServiceSection';
 import WorkSection from './components/WorkSection';
-
 function App() {
   return (
     <div className="App">

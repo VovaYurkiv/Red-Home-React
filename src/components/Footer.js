@@ -9,16 +9,32 @@ function Footer() {
         <div className="footer">
           <div className="footer-nav">
             <a href="#">
-              <img src={footer_icon} alt="twitter-icon" />
+              <img
+                className="footer-icon"
+                src={footer_icon}
+                alt="twitter-icon"
+              />
             </a>
             <a href="#">
-              <img src={footer_icon} alt="twitter-icon" />
+              <img
+                className="footer-icon"
+                src={footer_icon}
+                alt="twitter-icon"
+              />
             </a>
             <a href="#">
-              <img src={footer_icon} alt="twitter-icon" />
+              <img
+                className="footer-icon"
+                src={footer_icon}
+                alt="twitter-icon"
+              />
             </a>
             <a href="#">
-              <img src={footer_icon} alt="twitter-icon" />
+              <img
+                className="footer-icon"
+                src={footer_icon}
+                alt="twitter-icon"
+              />
             </a>
           </div>
           <div className="footer-line"></div>

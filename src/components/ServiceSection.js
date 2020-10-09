@@ -9,7 +9,7 @@ function ServiceSection() {
     <>
       <div className="services-container">
         <div className="services">
-          <h1>SERVICES</h1>
+          <h1 className="section-name">SERVICES</h1>
           <div className="section-line"></div>
           <p>We offer ipsum dolor sit amet, conseteur sadipscing elitr amet</p>
           <div className="offers">

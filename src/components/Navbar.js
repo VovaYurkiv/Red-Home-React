@@ -1,91 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Component } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
+import { MenuItems } from './MenuItems';
 
-function Navbar() {
-  return (
-    <>
+class Navbar extends Component {
+  state = { clicked: false };
+
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+
+  render() {
+    return (
       <div className="navbar-container">
-        <div className="navbar">
+        <nav className="NavbarItems">
           <h1 className="navbar-logo">Startup</h1>
-          <nav className="navbar-nav">
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="navbar-link"
-              tabindex="1"
-            >
-              Home
-            </Link>
-            <Link
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-              className="navbar-link"
-              tabindex="1"
-            >
-              Services
-            </Link>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-              className="navbar-link"
-              tabindex="1"
-            >
-              About
-            </Link>
-            <Link
-              activeClass="active"
-              to="works"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-              className="navbar-link"
-              tabindex="1"
-            >
-              Works
-            </Link>
-            <Link
-              activeClass="active"
-              to="blog"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-              className="navbar-link"
-              tabindex="1"
-            >
-              Blog
-            </Link>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-              className="navbar-link"
-              tabindex="1"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
+          <div className="menu-icon" onClick={this.handleClick}>
+            <i
+              className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}
+            ></i>
+          </div>
+          <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+            {MenuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    to={item.path}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-150}
+                    duration={500}
+                    className="nav-link"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
-    </>
-  );
+    );
+  }
 }
-
 export default Navbar;

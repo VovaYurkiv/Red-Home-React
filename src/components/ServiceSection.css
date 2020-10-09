@@ -29,9 +29,14 @@
 }
 @media screen and (max-width: 1100px) {
   .offers {
+    padding-top: 10px;
     grid-template-columns: 1fr;
   }
   .services-description {
     width: 90%;
+    padding-bottom: 40px;
+  }
+  .services-container {
+    padding-top: 10px;
   }
 }

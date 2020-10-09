@@ -40,9 +40,12 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .ad-container {
+    padding-top: 30px;
+  }
   .ad-logo {
     font-size: 20px;
     padding-bottom: 30px;
-    width: 400px;
+    width: 100%;
   }
 }
