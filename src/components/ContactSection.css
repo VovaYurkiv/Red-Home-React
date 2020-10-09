@@ -41,7 +41,6 @@
   border: 1px solid black;
   outline: none;
   transition: all 0.3s ease;
-  text-transform: uppercase;
 }
 .login .input {
   width: 48%;
@@ -53,14 +52,12 @@
 }
 .msg .area {
   height: 100px;
-  text-transform: uppercase;
   min-height: 50px;
 }
 .sub-btn {
   width: 170px;
   text-align: center;
   height: 45px;
-  text-transform: uppercase;
   border: 1px solid black;
   outline: none;
   background: transparent;

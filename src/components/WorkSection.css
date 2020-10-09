@@ -20,6 +20,7 @@
   font-size: 20px;
   color: #555555;
   transition: 0.2s linear;
+  list-style: none;
 }
 .work-picture {
   width: 90%;

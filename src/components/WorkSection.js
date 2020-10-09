@@ -1,6 +1,5 @@
 import React from 'react';
 import './WorkSection.css';
-import ReactDOM from 'react-dom';
 import work1 from './assets/work1.jpg';
 import work2 from './assets/work2.jpg';
 import work3 from './assets/work3.jpg';
@@ -18,13 +17,13 @@ function WorkSection() {
         <div className="works">
           <h1>LATEST WORKS</h1>
           <div className="section-line"></div>
-          <div className="works-nav">
-            <a className="work-nav">All</a>
-            <a className="work-nav">Branding</a>
-            <a className="work-nav">Design</a>
-            <a className="work-nav">Development</a>
-            <a className="work-nav">Strategy</a>
-          </div>
+          <ul className="works-nav">
+            <li className="work-nav">All</li>
+            <li className="work-nav">Branding</li>
+            <li className="work-nav">Design</li>
+            <li className="work-nav">Development</li>
+            <li className="work-nav">Strategy</li>
+          </ul>
 
           <div className="works-images">
             <div className="work-image">

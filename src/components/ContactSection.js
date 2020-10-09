@@ -1,7 +1,14 @@
 import React from 'react';
 import './ContactSection.css';
+import {useForm} from 'react-hook-form';
 
 function ContactSection() {
+    const {register, handleSubmit} = useForm();
+
+    const onSubmit = (data) => {
+      console.log(data);
+    }
+
   return (
     <>
       <div className="contact-container">
@@ -33,26 +40,24 @@ function ContactSection() {
               </div>
             </div>
             <div className="contact-form">
-              <div className="login">
-                <input type="text" className="input" placeholder="Your Name" />
-                <input type="text" className="input" placeholder="Your Email" />
+              <div className="login" onSubmit={handleSubmit(onSubmit)}>
+                <input type="text" className="input" name="name" placeholder="Your Name" ref={register} />
+                <input type="text" className="input" name="email" placeholder="Your Email" ref={register} />
               </div>
               <div className="subject">
                 <input
                   type="text"
+                  name="subject"
                   className="input"
                   placeholder="Your Subject"
+                  ref={register}
                 />
               </div>
-
               <div className="msg">
                 <textarea className="area" placeholder="Write Your Message" />
               </div>
               <div className="btn-description">
-                <button className="sub-btn" input type="submit">
-                  Send Message
-                </button>
-
+              <button type="submit" className="sub-btn">Send Message</button>
                 <p className="address-notice">
                   * We’ll contact you as soon as possible. We don’t reply on
                   Monday.

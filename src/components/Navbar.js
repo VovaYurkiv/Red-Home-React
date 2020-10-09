@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { Component } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
